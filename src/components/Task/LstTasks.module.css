@@ -1,0 +1,42 @@
+
+ul {
+    list-style:none;
+    margin-left:auto;
+    position:absolute;
+    left: 50%;
+    transform: translate(-50%);
+    padding-bottom: 10em;
+}
+
+li {
+    display:grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    border: 1px solid black ;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+
+input {
+    outline:none;
+    border:1px solid black;
+    padding:5px;
+    font-size:15px;
+
+}
+
+input[type = "button"] {
+    cursor: pointer;
+}
+input[type = "button"] {
+    background-color:black;
+    color:white;
+    border: 1px solid black;
+    transition: 500ms;
+}
+
+input[type = "button"]:hover {
+    color:black;
+    background-color:white;
+
+}
