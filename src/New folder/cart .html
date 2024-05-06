@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linxonix </title>
+    <link rel="icon" href="Thank.PNG" type="image/png">
+    <style>
+        /* Your CSS styles */
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Linxonix</h1>
+        <nav>
+            <a href="Linxonix Team.html">Back to Main Page</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="prev" onclick="changeSlide(-1)">❮ Prev</div>
+                    <img src="hunter.png" alt="Hunter 1" class="cute-image">
+                    <img src="hunter 2.png" alt="Hunter" class="cute-image">
+                    <div class="next" onclick="changeSlide(1)">Next ❯</div>
+                </div>
+                <div class="details">
+                    <div class="caption">ℌ𝔲𝔫𝔱𝔢𝔯</div>
+                    <div class="caption">$45+</div>
+                    <h2>FEATURES:</h2>
+                    <p>𝓕𝓮𝓪𝓽𝓾𝓻𝓮𝓼 : 30+ Toggles, Color Swaps and Hue Shifts, Skin Tone, Muscle Slider, Hair Swap, Cigar System</p>
+                    <h2>ASSETS:</h2>
+                    <p>- 𝓒𝓻𝓮𝓭𝓲𝓽𝓼 : Head & HairCap (EDITED BY ME, NO REUSE), Eyes, Beard, Body : ME, Outfit, Tattoos, Glasses</p>
+                    <!-- Add more assets here -->
+                    <h2>TOS:</h2>
+                    <p>- DO NOT share this avatar, if you buy it as a gift put THEIR information instead of yours.</p>
+                    <!-- Add more terms of service here -->
+                    <h2>CREDITS:</h2>
+                    <p>- Showcase / Videographer: InnocentDestiny</p>
+                        <!-- Add more credits here -->
+                </div>
+            </div>
+             <img src="copy.png" alt="copy" class="image">
+        </div>
+        <div class="recommendation">
+            <p>Check out these other great pictures:</p>
+            <div class="image-link">
+                <a href="amani.html">
+                    <img src="A.jpeg" alt="AMANI">
+                </a>
+                <p>AMANI</p>
+            </div>
+            <div class="image-link">
+                <a href="maki.html">
+                    <img src="maki.avif" alt="MAKI">
+                </a>
+                <p>Maki</p>
+            </div>
+            <!-- Add more recommended image-links as needed -->
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Linxonix. All rights reserved.</p>
+    </footer>
+
+    <!-- Add a button to link to the compiled JavaScript file -->
+    <button onclick="window.location.href = 'C:\Users\User\OneDrive\Desktop\New folder\App.jsx'">Go to App.jsx</button>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function changeSlide(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("cute-image");
+
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+    </script>
+</body>
+
+</html>

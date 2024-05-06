@@ -1,59 +1,58 @@
-import { useState } from 'react';
-import { Navigate } from "react-router-dom";
+import React, { useState } from 'react';
+import { Navigate } from 'react-router-dom';
 import './Login.css';
 
-
-export const Login = (props) => {
-    
+export const Login = () => {
     const [userName, setUserName] = useState('');
     const [pass, setPassword] = useState('');
     const [redirect, setRedirect] = useState(false);
-    
+    const [showPopup, setShowPopup] = useState(false); 
+    const [popupMessage, setPopupMessage] = useState(''); 
 
     const handleSubmit = (e) => {
-      e.preventDefault();
-      if (userName === 'laura' && pass === 'yes') {
+        e.preventDefault();
+        if (userName === 'laura' && pass === 'yes') {
+            setPopupMessage('Welcome, Laura!');
+            setShowPopup(true);
+        } else {
+            setPopupMessage('Invalid username or password. Please try again.');
+            setShowPopup(true);
+        }
+    };
 
-          setRedirect(true); // Set redirect to true if login is successful
-      } else {
-          alert("Invalid username or password");
-      }
-  };
-
-  if (redirect) {
-    return <Navigate to="/calc" />;
-  }
+    const handlePopupClose = () => {
+        setShowPopup(false);
+        if (userName === 'laura' && pass === 'yes') {
+            setRedirect(true);
+        }
+    };
 
     return (
-      <div className="login">
-        
-          <header>
-            <h2 class ="logo"></h2>
-          </header>
-            
+        <div className="login">
             <div className="wrapper">
-             
-        
-                    <form onSubmit={handleSubmit}>
-                    <h1>Login</h1>
-                      <div className="input-box">
-                        <input value={userName} onChange={(e) => setUserName(e.target.value)} type="text" placeholder='Username' required/>
-                        </div>
-
-                      <div className='input-box'>
-                        <input value={pass} onChange={(e) => setPassword(e.target.value)} type="password" placeholder= 'Password' required  />
-                       </div>
-
-                        <button type="submit">Log in</button>
-                    </form>
-                   
+                <form onSubmit={handleSubmit}>
+                    <h1>Linxonix</h1>
+                    <div className="input-box">
+                        <input value={userName} onChange={(e) => setUserName(e.target.value)} type="text" placeholder="Username" required />
+                    </div>
+                    <div className="input-box">
+                        <input value={pass} onChange={(e) => setPassword(e.target.value)} type="password" placeholder="Password" required />
+                    </div>
+                    <button type="submit">Log in</button>
+                </form>
+            </div>
+            {showPopup && (
+                <div className="popup">
+                    <div className="popup-content">
+                        <span className="close" onClick={handlePopupClose}>
+                            &times;
+                        </span>
+                        <p>{popupMessage}</p>
+                    </div>
                 </div>
-              
-                
-               
-                </div>    
-       
-        
+            )}
+            {redirect && <Navigate to="/home" />}
+        </div>
     );
 };
 

@@ -14,23 +14,10 @@ export default function Root() {
               </li>
 
               <li key="mnu_1">
-                <a href={`/todoList`}>TodoList</a>
+                <a href={`/home`}>Home</a>
               </li>
 
-              <li key="mnu_2">
-                <a href={`/calc`}>Calc</a>
-              </li>
-
-              <li key="mnu_3">
-                <a href={`/card`}>Annie Yang</a>
-              </li>
-
-              <li key="mnu_4">
-                <a href={`/task`}>Task</a>
-              </li>
-      
-
-
+            
             </ul>
           </nav>
         </div>
