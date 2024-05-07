@@ -6,7 +6,10 @@ import Root from "./routes/Root";
 import Home from './components/home/Home';
 import Login from  './components/login/Login';
 import ErrorPage from './error-page';
-
+import Maki from "./components/maki/Maki";
+import Hunter from "./components/hunter/Hunter";
+import Diara from "./components/diara/Diara";
+import Avatars from './components/avatars/Avatars';
 
 import {
   createBrowserRouter,
@@ -22,15 +25,30 @@ const router = createBrowserRouter([
     
   }
   
-
-  
-
   ,{
     path: "Home"
     ,element: <Home title="home"></Home>
   }
 
+ 
+  ,{
+    path:"Maki"
+    ,element:<Maki/>
+  },
+
+  {path:"Hunter"
+    ,element:<Hunter/>
+
+  },
+
+  {path:"Diara",
+  element:<Diara/>
+  },
   
+  {
+    path:"Avatars"
+    ,element:<Avatars/>
+  }
 
 ]);
 

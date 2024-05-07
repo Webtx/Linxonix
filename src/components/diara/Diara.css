@@ -1,0 +1,109 @@
+.diara header {
+    text-align: center;
+    background-color: #DCD0EA; /* Purple color */
+    color: #fff;
+    padding: 10px;
+}
+
+.diara{
+    font-family: 'Comic Sans MS', cursive;
+    margin: 0;
+    padding: 0;
+    background-image: url('../../assets/images/back.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.diara h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.diara h2{
+    font-size:15px;
+}
+
+.diara nav {
+    text-align: center;
+}
+
+.diara nav a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0 10px;
+    color: #C3B1E1;
+}
+
+.diara nav a:hover {
+    color: #F6D7E8;
+}
+
+.hunter .avatar{
+    text-align: center;
+}
+
+.diara .container {
+    flex: 1; 
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.diara .card {
+    border: 2px solid #DCD0EA; /* Border color */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: rgba(0s, 0, 0, 0.7);
+    backdrop-filter: blur(10px); /* Blur the background slightly */
+}
+
+.diara .carousel-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.diara footer {
+    text-align: center;
+    background-color: #DCD0EA; 
+    color: #fff;
+    padding: 10px;
+}
+
+.diara .image {
+    max-width: 400px; 
+    margin: 20px auto; 
+    float: right; 
+}
+
+.diara .copy{
+    max-width: 100px;
+    float:right;
+}
+
+#button1{
+    font-size: 15px;
+    opacity: .5;
+    border-radius: 40px;
+    padding: 5px;
+    margin-right: 100px;
+    color:gray;
+    background-color: #C3B1E1;
+    border: gray 2px solid;
+}
+
+#button2{
+    font-size: 15px;
+    opacity: .5;
+    border-radius: 40px;
+    padding: 5px;
+    margin-left: 100px;
+    color:gray;
+    background-color: #C3B1E1;
+    border: gray 2px solid;
+}

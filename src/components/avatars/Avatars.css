@@ -1,0 +1,86 @@
+.avatars header {
+    text-align: center;
+    background-color: #DCD0EA; /* Purple color */
+    color: #fff;
+    padding: 10px;
+}
+
+.avatars{
+    font-family: 'Comic Sans MS', cursive;
+    margin: 0;
+    padding: 0;
+    background-image: url('../../assets/images/back.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.avatars h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.avatars p{
+    text-align: center;
+    font-size: 10px;
+}
+.avatars h2{
+    text-align: center;
+    font-size:15px;
+}
+
+.avatars nav {
+    text-align: center;
+}
+
+.avatars nav a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0 10px;
+    color: #C3B1E1;
+}
+
+.avatars nav a:hover {
+    color: #F6D7E8;
+}
+
+.avatars .container { 
+    flex: 1; 
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.avatars .card {
+    border: 2px solid #DCD0EA; 
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: rgba(0s, 0, 0, 0.7);
+    backdrop-filter: blur(10px); 
+}
+
+.avatars footer {
+    text-align: center;
+    background-color: #DCD0EA; 
+    color: #fff;
+    padding: 10px;
+}
+
+.image-link {
+    display: inline-block;
+    margin: 10px;
+}
+
+.image-link img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.avatars p{
+    font-size: 11px;
+}
