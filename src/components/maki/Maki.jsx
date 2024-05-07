@@ -18,12 +18,7 @@ const [stImage, setImage]=useState(Makis.Maki3);
             <li key="mnu_0">
                 <a href={`/Avatars`}>Avatars</a>
             </li>
-            <li key="mnu_1">
-                <a href={`/Hunter`}>Hunter</a>
-            </li>
-            <li key="mnu_2">
-                <a href={`/Diara`}>Diara</a>
-            </li>
+           
     
            
         </nav>

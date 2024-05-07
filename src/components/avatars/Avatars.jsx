@@ -1,3 +1,4 @@
+import React from 'react';
 import "./Avatars.css";
 import MAKI from "../../assets/images/maki.avif";
 import AMANI from "../../assets/images/amani.jpeg";
@@ -18,17 +19,7 @@ export default function Avatars(){
             <nav>
             <li key="mnu_0">
                 <a href={`/Home`}>Home</a>
-            </li>
-            <li key="mnu_1">
-                <a href={`/Maki`}>Maki</a>
-            </li>
-            <li key="mnu_2">
-                <a href={`/Hunter`}>Hunter</a>
-            </li>
-            <li key="mnu_3">
-                <a href={`/Diara`}>Diara</a>
-            </li>
-    
+           </li>
            
         </nav>
     </header>
@@ -41,46 +32,64 @@ export default function Avatars(){
         <br/>
 
         <div class="image-link">
+            <a href="/Maki">
                 <img src={MAKI} alt="MAKI"/>
+            </a>
             <p>MAKI</p>
         </div>
          <div class="image-link">
+            <a href="/Diara">
                 <img src={AMANI} alt="AMANI"/>
+            </a>
             <p>AMANI</p>
         </div>
          <div class="image-link">
+            <a href="/Hunter">
                 <img src={HUNTER} alt="HUNTER"/>
+            </a>
             <p>HUNTER</p>
         </div>
         <p>  🌟 Ｕｐｃｏｍｉｎｇ 🌟     </p>
 
         <div class="image-link">
+            <a href="/Dia">
                 <img src={DIA} alt="DIA"/>
+            </a>
             <p>DIA</p>
         </div>
 
         <div class="image-link">
+            <a href="/Sxnic">
                 <img src={SXNIC} alt="SXNIC"/>
+            </a>
             <p>SXNIC</p>
         </div>
 
         <div class="image-link">
+            <a href="/Vaeh">
                 <img src={VAEH} alt="VAEH"/>
+            </a>
             <p>VAEH</p>
         </div>
 
         <div class="image-link">
+            <a href="/Atlas">
                 <img src={ATLAS} alt="ATLAS"/>
+            </a>
             <p>ATLAS</p>
         </div>
 
         <div class="image-link">
+            <a href="/Blub">
                 <img src={BLUB} alt="BLUB"/>
+            </a>
             <p>BLUB</p>
         </div>
 
         <div class="image-link">
-                <img src={SUMI}alt="SUMI"/>
+            <a href="/Sumi">
+                <img src={SUMI} alt="SUMI"/>
+            </a>
             <p>SUMI</p>
         </div>
 

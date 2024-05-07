@@ -6,7 +6,7 @@
 }
 
 .hunter{
-    font-family: 'Comic Sans MS', cursive;
+    font-family: Quicksand;
     margin: 0;
     padding: 0;
     background-image: url('../../assets/images/back.gif');
@@ -26,7 +26,7 @@
 
 .hunter p{
     text-align: center;
-    font-size: 10px;
+    font-size: 50px;
 }
 .hunter h2{
     text-align: center;
@@ -45,6 +45,11 @@
     color: #C3B1E1;
 }
 
+.hunter nav li {
+    list-style:none;
+    display:inline-block;
+}
+
 .hunter nav a:hover {
     color: #F6D7E8;
 }
@@ -60,7 +65,7 @@
 .hunter .card {
     border: 2px solid #DCD0EA; 
     border-radius: 10px;
-    padding: 20px;
+    padding: 30px;
     margin-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     background-color: rgba(0s, 0, 0, 0.7);
@@ -83,7 +88,7 @@
 .hunter .image {
     max-width: 300px; 
     margin: 20px auto; 
-    float: left; 
+   
 }
 
 .hunter .copy{

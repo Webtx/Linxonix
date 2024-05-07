@@ -6,7 +6,7 @@
 }
 
 .diara{
-    font-family: 'Comic Sans MS', cursive;
+    font-family: Quicksand;
     margin: 0;
     padding: 0;
     background-image: url('../../assets/images/back.gif');
@@ -34,6 +34,10 @@
     font-size: 16px;
     margin: 0 10px;
     color: #C3B1E1;
+}
+.diara nav li {
+    list-style:none;
+    display:inline-block;
 }
 
 .diara nav a:hover {
@@ -86,24 +90,27 @@
     float:right;
 }
 
-#button1{
-    font-size: 15px;
-    opacity: .5;
+#button1,
+#button2 {
+    font-size: 14px;
+    opacity: 1;
     border-radius: 40px;
-    padding: 5px;
-    margin-right: 100px;
-    color:gray;
-    background-color: #C3B1E1;
-    border: gray 2px solid;
+    padding: 10px 20px;
+    color: #424242;
+    background-color: white;
+    border: 2px solid black;
+    cursor: pointer;
+    font-weight: 700;
+    font-family: 'Oswald', 'Futura', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition-property: background-color, color, border;
+    transition-duration: 1s;
 }
 
-#button2{
-    font-size: 15px;
-    opacity: .5;
-    border-radius: 40px;
-    padding: 5px;
-    margin-left: 100px;
-    color:gray;
-    background-color: #C3B1E1;
-    border: gray 2px solid;
+#button1:hover,
+#button2:hover {
+    background-color: #f67af1;
+    color: white;
+    border-color: #f67af1;
 }

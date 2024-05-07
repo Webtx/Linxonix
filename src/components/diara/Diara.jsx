@@ -18,12 +18,7 @@ const [stImage, setImage]=useState(Diaras.Diara1);
         <li key="mnu_0">
                 <a href={`/Avatars`}>Avatars</a>
             </li>
-            <li key="mnu_1">
-                <a href={`/Maki`}>Maki</a>
-            </li>
-            <li key="mnu_2">
-                <a href={`/Hunter`}>Hunter</a>
-            </li>
+          
         </nav>
     </header>
 

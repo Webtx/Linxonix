@@ -19,7 +19,7 @@
 }
 
 .home body {
-    font-family: 'Comic Sans MS', cursive;
+    font-family: Quicksand;
     background-color: #fdeff2;
     margin: 0;
     padding: 0;
@@ -58,13 +58,16 @@
     text-align: center;
 }
 
-.home nav ul li {
-    text-decoration: none;
-    list-style: none;
+.home nav a {
+    text-decoration: dashed;
     font-weight: bold;
     font-size: 16px;
     margin: 0 10px;
     color:#9c6ce9;
+}
+
+.home nav li{
+    list-style: none;
     display: inline-block;
 }
 

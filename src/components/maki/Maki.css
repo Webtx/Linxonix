@@ -6,7 +6,7 @@
 }
 
 .maki{
-    font-family: 'Comic Sans MS', cursive;
+    font-family: Quicksand;
     margin: 0;
     padding: 0;
     background-image: url('../../assets/images/back.gif');
@@ -36,9 +36,15 @@
     color: #C3B1E1;
 }
 
+.maki nav li {
+    list-style:none;
+    display:inline-block;
+}
+
 .maki nav a:hover {
     color: #F6D7E8;
 }
+
 
 .hunter .avatar{
     text-align: center;

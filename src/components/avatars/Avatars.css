@@ -6,7 +6,7 @@
 }
 
 .avatars{
-    font-family: 'Comic Sans MS', cursive;
+    font-family: Quicksand; 
     margin: 0;
     padding: 0;
     background-image: url('../../assets/images/back.gif');
@@ -39,6 +39,11 @@
     font-size: 16px;
     margin: 0 10px;
     color: #C3B1E1;
+}
+
+.avatars nav li {
+    list-style:none;
+    display:inline-block;
 }
 
 .avatars nav a:hover {
