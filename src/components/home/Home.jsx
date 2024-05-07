@@ -2,17 +2,18 @@ import Homepic from '../../assets/images/picthing.png';
 
 import './Home.css';
 
+
 export default function Home(){
     return(
         <div class='home'>
         <header>
         <h2 >Linxonix</h2>
-        <div >
+        <div>
         <nav>
             <ul>
-            <li key="mnu_2">
+            <li key="mnu_0">
                 <a href={`/Avatars`}>Avatars</a>
-            </li>
+              </li>
                 <li>Shopping Cart</li>            
             </ul>
         </nav>
@@ -20,7 +21,7 @@ export default function Home(){
         </header>
         <body>
             <img src={Homepic} alt="Home picture of Linxonix" className='container'/>
-            <figcaption>Lots of text</figcaption>
+            <figcaption>Come and join us!</figcaption>
             <br/>
             <br/>
            

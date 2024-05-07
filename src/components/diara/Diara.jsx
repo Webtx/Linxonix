@@ -15,7 +15,15 @@ const [stImage, setImage]=useState(Diaras.Diara1);
     <header>
         <h1>Linxonix</h1>
         <nav>
-            <a href="#">Back to Main Page</a>
+        <li key="mnu_0">
+                <a href={`/Avatars`}>Avatars</a>
+            </li>
+            <li key="mnu_1">
+                <a href={`/Maki`}>Maki</a>
+            </li>
+            <li key="mnu_2">
+                <a href={`/Hunter`}>Hunter</a>
+            </li>
         </nav>
     </header>
 

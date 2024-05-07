@@ -15,7 +15,15 @@ const [stImage, setImage]=useState(Hunters.Hunter1);
     <header>
         <h1>Linxonix</h1>
         <nav>
-            <a href="#">Back to Main Page</a>
+        <li key="mnu_0">
+                <a href={`/Avatars`}>Avatars</a>
+            </li>
+            <li key="mnu_1">
+                <a href={`/Maki`}>Maki</a>
+            </li>
+            <li key="mnu_2">
+                <a href={`/Diara`}>Diara</a>
+            </li>
         </nav>
     </header>
 
