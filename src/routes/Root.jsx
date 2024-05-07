@@ -16,17 +16,8 @@ export default function Root() {
               <li key="mnu_1">
                 <a href={`/home`}>Home</a>
               </li>
-             
+
               <li key="mnu_2">
-                <a href={`/Maki`}>Maki</a>
-              </li>
-              <li key="mnu_3">
-                <a href={`/Hunter`}>Hunter</a>
-              </li>
-              <li key="mnu_4">
-                <a href={`/Diara`}>Diara</a>
-              </li>
-              <li key="mnu_5">
                 <a href={`/Avatars`}>Avatars</a>
             </li>
             </ul>

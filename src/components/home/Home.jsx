@@ -4,13 +4,15 @@ import './Home.css';
 
 export default function Home(){
     return(
-        <div >
+        <div class='home'>
         <header>
         <h2 >Linxonix</h2>
-        <div id="nav">
+        <div >
         <nav>
             <ul>
-                <li>Avatars</li>
+            <li key="mnu_2">
+                <a href={`/Avatars`}>Avatars</a>
+            </li>
                 <li>Shopping Cart</li>            
             </ul>
         </nav>
