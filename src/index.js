@@ -1,62 +1,30 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import reportWebVitals from './reportWebVitals';
-import Root from "./routes/Root";
-import Home from './components/home/Home';
-import Login from  './components/login/Login';
-import ErrorPage from './error-page';
-import Maki from "./components/maki/Maki";
-import Hunter from "./components/hunter/Hunter";
-import Diara from "./components/diara/Diara";
-import Avatars from './components/avatars/Avatars';
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import Home from "./components/Home/Home.jsx";
+import Login from "./components/Login/Login.jsx";
+import ErrorPage from "./components/Error/error-page";
+import Maki from "./components/Characters/Maki/Maki.jsx";
+import Hunter from "./components/Characters/Hunter/Hunter.jsx";
+import Amani from "./components/Characters/Amani/Amani.jsx";
+import Avatars from "./components/Avatars/Avatars";
+
+import "./global.css";
 
 const router = createBrowserRouter([
-   {
-    path: "/"
-    ,element: <Root />//,element: <div>Hello world!</div>
-    , errorElement: <ErrorPage />
-    , element: <Login />
-    
-  }
-  
-  ,{
-    path: "Home"
-    ,element: <Home title="home"></Home>
-  }
-
- 
-  ,{
-    path:"Maki"
-    ,element:<Maki/>
-  },
-
-  {path:"Hunter"
-    ,element:<Hunter/>
-
-  },
-
-  {path:"Diara",
-  element:<Diara/>
-  },
-  
-  {
-    path:"Avatars"
-    ,element:<Avatars/>
-  }
-
+  { path: "/", element: <Home /> },
+  { path: "login", element: <Login /> },
+  { path: "avatars", element: <Avatars /> },
+  { path: "maki", element: <Maki /> },
+  { path: "hunter", element: <Hunter /> },
+  { path: "amani", element: <Amani /> },
+  { path: "*", element: <ErrorPage /> },
 ]);
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <RouterProvider router={router}></RouterProvider>
   </React.StrictMode>
 );
-
-reportWebVitals();

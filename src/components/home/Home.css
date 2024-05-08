@@ -1,100 +1,98 @@
-.home .container{
-    width:50%;
-    height:250px;
-    margin-right: auto;
-    margin-left:auto;
-    display:block;
-    border-radius: 50px;
-    max-width: 50%;
-    box-shadow: 15px 5px 5px #b198da ;
-
+.home .container {
+  width: 50%;
+  height: 250px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  border-radius: 50px;
+  max-width: 50%;
+  box-shadow: 15px 5px 5px #b198da;
 }
 
-.home img:hover{
-    box-shadow: 15px 5px 40px white;
+.home img:hover {
+  box-shadow: 15px 5px 40px white;
 }
 
-.home figcaption{
-    text-align: center;
+.home figcaption {
+  text-align: center;
 }
 
-.home body {
-    font-family: Quicksand;
-    background-color: #fdeff2;
-    margin: 0;
-    padding: 0;
-    
+.home div {
+  font-family: Quicksand;
+  background-color: #fdeff2;
+  margin: 0;
+  padding: 0;
 }
 
 .home header {
-    text-align: center;
-    background-color: #DCD0EA;
-    padding:10px 0px 1px 10px;
-    max-height:min-content;
-    margin-bottom: 20px;
+  text-align: center;
+  background-color: #dcd0ea;
+  padding: 10px 0px 1px 10px;
+  max-height: min-content;
+  margin-bottom: 20px;
 }
 
 .home h1 {
-    color: #fff;
-    font-size: 24px;
-    margin: 0;
-    text-shadow:1px 2px black;
-    padding-left: 10px;
-    opacity: 0.65;
+  color: #fff;
+  font-size: 24px;
+  margin: 0;
+  text-shadow: 1px 2px black;
+  padding-left: 10px;
+  opacity: 0.65;
 }
 
-.home h2{
-    font-size: 35px;  
-    text-align: center;
-    text-shadow: 2px 2px #9c6ce9;
+.home h2 {
+  font-size: 35px;
+  text-align: center;
+  text-shadow: 2px 2px #9c6ce9;
 }
 
-.home h2:hover{
-    color:#9c6ce9;
-    text-shadow:1px 2px black;
+.home h2:hover {
+  color: #9c6ce9;
+  text-shadow: 1px 2px black;
 }
 
 .home nav {
-    text-align: center;
+  text-align: center;
 }
 
 .home nav a {
-    text-decoration: dashed;
-    font-weight: bold;
-    font-size: 16px;
-    margin: 0 10px;
-    color:#9c6ce9;
+  text-decoration: dashed;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0 10px;
+  color: #9c6ce9;
 }
 
-.home nav li{
-    list-style: none;
-    display: inline-block;
+.home nav li {
+  list-style: none;
+  display: inline-block;
 }
 
 .home nav ul li:hover {
-    color: #fcfcfc;
+  color: #fcfcfc;
 }
 
 .home p {
-    font-size: 18px;
-    padding: 0px 10px 10px;
+  font-size: 18px;
+  padding: 0px 10px 10px;
 }
 
-.home .box{
-    border:1px #DCD0EA solid;
-    background:#DCD0EA;
-    margin-right:15.5em;
-    margin-left:15.5em;
-    box-shadow: 1px 1px 1px #b198da;
+.home .box {
+  border: 1px #dcd0ea solid;
+  background: #dcd0ea;
+  margin-right: 15.5em;
+  margin-left: 15.5em;
+  box-shadow: 1px 1px 1px #b198da;
 }
 
 .home footer {
-    text-align: center;
-    background-color: #DCD0EA;
-    padding: 10px;
-    color: #fff;
+  text-align: center;
+  background-color: #dcd0ea;
+  padding: 10px;
+  color: #fff;
 }
 
-.home footer a:hover{
-    color:#9c6ce9;
+.home footer a:hover {
+  color: #9c6ce9;
 }

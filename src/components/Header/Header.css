@@ -1,0 +1,28 @@
+.Header {
+  text-align: center;
+  background-color: #dcd0ea; /* Purple color */
+  color: #fff;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.Header > h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.Header > nav > ul {
+  list-style: none;
+  display: flex;
+  gap: 2ch;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+.Header > nav > ul > li > a{
+  color: #c3b1e1; 
+  font-weight: 900;
+  text-decoration: none;
+}

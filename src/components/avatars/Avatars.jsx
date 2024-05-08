@@ -1,105 +1,47 @@
-import React from 'react';
+import MAKI from "../../assets/images/characters/maki/maki.avif";
+import AMANI from "../../assets/images/characters/amani/am1.jpeg";
+import HUNTER from "../../assets/images/characters/hunter/hunter.png";
+import DIA from "../../assets/images/characters/dia/dia.avif";
+import SXNIC from "../../assets/images/characters/sxnic/sxnic.avif";
+import VAEH from "../../assets/images/characters/vaeh/vaeh.png";
+import ATLAS from "../../assets/images/characters/atlas/atlas.png";
+import BLUB from "../../assets/images/characters/blub/blub.avif";
+import SUMI from "../../assets/images/characters/sumi/sumi.png";
+
+import Footer from "../Footer/Footer";
+import Card from "./card/Card";
+import Header from "../Header/Header";
 import "./Avatars.css";
-import MAKI from "../../assets/images/maki.avif";
-import AMANI from "../../assets/images/amani.jpeg";
-import HUNTER from "../../assets/images/hunter.png";
-import DIA from "../../assets/images/dia.avif";
-import SXNIC from "../../assets/images/sxnic.avif";
-import VAEH from "../../assets/images/vaeh.png";
-import ATLAS from "../../assets/images/atlas.png";
-import BLUB from "../../assets/images/blub.avif";
-import SUMI from "../../assets/images/sumi.png";
 
-export default function Avatars(){
+/** @description Displays current avatars available */
+export default function Avatars() {
+  return (
+    <div className="Avatars">
+      <Header links={[{ name: "Home", loc: "/" }]}></Header>
+      <div className="container">
+        <div className="card">
+          <p>
+            Check out thousands of VRChat avatars, Assets, Worlds, that can be used for anything you imagine, made
+            by hundreds of independent artists.
+          </p>
+          <Card name="maki" src={MAKI}></Card>
+          <Card name="amani" src={AMANI}></Card>
+          <Card name="hunter" src={HUNTER}></Card>
 
-    return(
-    <body className="avatars">
-    <header>
-        <h1>Linxonix</h1>
-            <nav>
-            <li key="mnu_0">
-                <a href={`/Home`}>Home</a>
-           </li>
-           
-        </nav>
-    </header>
-
-    <div class="container">
-         <div class="card">
-        <p>Check out thousands of VRChat avatars, Assets, Worlds, that can be used for anything you imagine, made by
-            hundreds of independent artists.</p>
-        <br/>
-        <br/>
-
-        <div class="image-link">
-            <a href="/Maki">
-                <img src={MAKI} alt="MAKI"/>
-            </a>
-            <p>MAKI</p>
+          <h2>Upcoming</h2>
+          {[
+            ["dia", DIA],
+            ["sxnic", SXNIC],
+            ["vaeh", VAEH],
+            ["atlas", ATLAS],
+            ["blub", BLUB],
+            ["sumi", SUMI],
+          ].map((cardInfo, index) => {
+            return <Card name={cardInfo[0]} src={cardInfo[1]} key={index}></Card>;
+          })}
         </div>
-         <div class="image-link">
-            <a href="/Diara">
-                <img src={AMANI} alt="AMANI"/>
-            </a>
-            <p>AMANI</p>
-        </div>
-         <div class="image-link">
-            <a href="/Hunter">
-                <img src={HUNTER} alt="HUNTER"/>
-            </a>
-            <p>HUNTER</p>
-        </div>
-        <p>  🌟 Ｕｐｃｏｍｉｎｇ 🌟     </p>
-
-        <div class="image-link">
-            <a href="/Dia">
-                <img src={DIA} alt="DIA"/>
-            </a>
-            <p>DIA</p>
-        </div>
-
-        <div class="image-link">
-            <a href="/Sxnic">
-                <img src={SXNIC} alt="SXNIC"/>
-            </a>
-            <p>SXNIC</p>
-        </div>
-
-        <div class="image-link">
-            <a href="/Vaeh">
-                <img src={VAEH} alt="VAEH"/>
-            </a>
-            <p>VAEH</p>
-        </div>
-
-        <div class="image-link">
-            <a href="/Atlas">
-                <img src={ATLAS} alt="ATLAS"/>
-            </a>
-            <p>ATLAS</p>
-        </div>
-
-        <div class="image-link">
-            <a href="/Blub">
-                <img src={BLUB} alt="BLUB"/>
-            </a>
-            <p>BLUB</p>
-        </div>
-
-        <div class="image-link">
-            <a href="/Sumi">
-                <img src={SUMI} alt="SUMI"/>
-            </a>
-            <p>SUMI</p>
-        </div>
-
+      </div>
+      <Footer />
     </div>
-</div>
-    <footer>
-        <p>&copy; 2023 Linxonix Website. All rights reserved.</p>
-    </footer>
-
-</body>
-
-    );
+  );
 }
