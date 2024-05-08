@@ -1,0 +1,17 @@
+.Card {
+  display: inline-block;
+  margin: 10px;
+}
+
+.Card > a > img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.Card > p {
+  text-transform: uppercase;
+}

@@ -1,0 +1,16 @@
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  background-color: #dcd0ea;
+  color: black;
+  height: 50px;
+}
+
+footer > span {
+  margin: 0px;
+  font-size: 20px;
+  height: fit-content;
+  user-select: none;
+}
